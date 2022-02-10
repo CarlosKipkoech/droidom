@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0B9AF"
+    tools:context=".Login">
+
+
+    <EditText
+        android:id="@+id/new_password_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_email_input" />
+
+    <EditText
+        android:id="@+id/new_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/Login_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Already have an account?"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/login_textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount_button" />
+
+    <TextView
+        android:id="@+id/login_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="84dp"
+        android:text="Login"
+        android:textColor="#436C61"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Login_textView"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount_button" />
+
+    <EditText
+        android:id="@+id/confirm_password_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_password_input" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="151dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/candal"
+        android:text="Sign Up."
+        android:textColor="#436C61"
+        android:textSize="29dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_email_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_name" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/CreateAccount_button"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="46dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#436C61"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_input"
+        app:neumorph_backgroundColor="#C0B9AF"
+        app:neumorph_shadowColorDark="@color/cardview_shadow_start_color"
+        app:neumorph_shadowColorLight="#D3D0CC"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeColor="#607E73"
+        app:neumorph_strokeWidth="0.3dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="261dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/img_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

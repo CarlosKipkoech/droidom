@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563728421514",
+    "project_id": "droidom-4e5eb",
+    "storage_bucket": "droidom-4e5eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563728421514:android:21b14897594fe6264c5373",
+        "android_client_info": {
+          "package_name": "com.moringaschool.droidom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563728421514-445qcgtstg8hl1maoul0lrshjhcsbr99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx1s5NIgRrNZs_Je3iC5uyX2AmrtfRTlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563728421514-445qcgtstg8hl1maoul0lrshjhcsbr99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

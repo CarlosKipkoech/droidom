@@ -108,7 +108,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         if(!validEmail || !validName || !validPassWord) return;
 
-
+        //Register an account with firebase tool
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -122,6 +122,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
             }
 
+
+            //creates a user profile
             private void createFirebaseUserProfile(final FirebaseUser user) {
 
                 UserProfileChangeRequest addProfileName = new UserProfileChangeRequest.Builder()
@@ -167,7 +169,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     @Override
     public  void onStart(){
         super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
+//        mAuth.addAuthStateListener(mAuthListener);
     }
 
     @Override

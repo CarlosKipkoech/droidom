@@ -2,6 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/andika</item>
+        <item>@font/archivo_black</item>
         <item>@font/candal</item>
+        <item>@font/coiny</item>
     </array>
 </resources>
